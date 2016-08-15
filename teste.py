@@ -7,7 +7,7 @@
 #     lista = readxml.data_wed_attributes()
     
 #     for i in range(10):
-#     	dao.insert_wed_state(lista)
+#       dao.insert_wed_state(lista)
 
 
     
@@ -19,7 +19,7 @@ import threading
 
 def inser_fila():
     dao = DAO()
-    readxml = Readxml('xml/paralelo.xml')
+    readxml = Readxml('xml/sequencial.xml')
     lista = readxml.data_wed_attributes()
 
     dao.insert_wed_state(lista)
@@ -34,7 +34,8 @@ if __name__ == '__main__':
 
     # lista = readxml.data_wed_attributes()
     
-    for i in range(50):
+    for i in range(5000):
+        print(i)
         run_threaded(inser_fila)
         # dao.insert_wed_state(lista)
 
