@@ -14,10 +14,11 @@ This project has been developed for the class Advanced Topics in Computer Scienc
 
 Install:
   - python3
-  - SQLAlchemy
-  - PostgreSQL
-  - PyMySQL
   - python3-pip
+  - SQLAlchemy
+  - MySQL
+  - PyMySQL
+  
 
 All necessary libraries are in requirements.txt file. To install all of them type it:
   - sudo pip3 install -r requirements.txt
